@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rafaela Paganotto</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./eu.jpeg" alt="Minha foto">
+        </div>
+        <ul>
+            <li>
+                <a href="http://github.com/RafaZuge">github</a>
+            </li>
+            <li>
+                <a href="mailto:rpaganotto@gmail.com">email</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class='container'>
+            <div class="name">
+                <h1>Rafaela Paganotto</h1>
+                <h5>Front-End</h5>
+            </div>
+            <div>
+                <div onclick = "displayAbout()" id="arrow">
+                    <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+            <div style="display: none" id='about'>
+                <p>Graduada em Ciência da Computação pela Universidade Luterana do Brasil (2010) e
+                   Especialista em Tecnologias da Informação e Comunicação na Educação pela Universidade Federal do Rio
+                   Grande - FURG (2019). Atualmente sou professora em um Curso Técnico de Informática em uma escola estadual,
+                   com ênfase em Lógica de Programação, Banco de Dados, Engenharia de Software e Informática Básica para Jovens e adultos.
+                   Sou tambem estagiária de desenvolvimento na Nfe.io e estou cursando a Pós Graduação em Design para WEB na Faculdade Fael.
+                </p>
+                <div class="form">
+                    <div>
+                        <p>Deixe seu contato!</p>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="">
+                        <button>enviar!</button>
+                    </form>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
